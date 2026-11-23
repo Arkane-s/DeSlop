@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title id="pageTitle">Test Defender</title>
+<style>
+  html{background:#080808;color:#e8eefc;font:22px/1.6 "Segoe UI",system-ui,sans-serif}
+  body{max-width:960px;margin:80px auto;padding:0 32px;display:grid;gap:28px}
+  h1{font-size:56px;line-height:1.1}
+  p{color:#8fa3c7;font-size:24px}
+  pre{margin:0;padding:24px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);white-space:pre-wrap;word-break:break-all;user-select:all;font-size:24px}
+  .row{display:flex;flex-wrap:wrap;gap:16px}
+  button{font:inherit;font-size:28px;font-weight:600;color:#fff;background:linear-gradient(135deg,#2f7bff,#1450c8);border:0;border-radius:20px;padding:18px 40px;cursor:pointer}
+  button:hover{background:linear-gradient(135deg,#4a90ff,#1c5fe0)}
+  button.secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12)}
+  button.secondary:hover{background:rgba(255,255,255,.16);border-color:#3b8cff}
+</style>
+</head>
+<body>
+<h1 id="heading">Test Defender</h1>
+<p id="description">This is the EICAR test string. It's harmless, but antivirus softwares treat it as a virus so you can check that it works.</p>
+<pre id="str"></pre>
+<div class="row">
+  <button id="dl">Download</button>
+  <button id="copy" class="secondary">Copy link</button>
+</div>
+<p id="note"></p>
+<script src="i18n.js"></script>
+<script src="eicar.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "DeSlop - Less Slop",
+  "version": "1.0.9",
+  "description": "An extension that lets you scan (almost) anything with Microsoft Defender, directly from your browser. THIS IS NOT MADE BY MICROSOFT OR ANY OFFICIAL TEAM",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "nativeMessaging",
+    "downloads",
+    "storage",
+    "contextMenus",
+    "notifications",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Deslop - Less Slop",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  }
+}
